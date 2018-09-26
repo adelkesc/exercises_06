@@ -34,7 +34,7 @@ namespace GameModel.Tests
         }
 
         [Fact]
-        public void Attack_WithoutWeapon_ShouldReturnAttackValueFromStrengtOnly()
+        public void Attack_WithoutWeapon_ShouldReturnAttackValueFromStrengthOnly()
         {
 
         }
@@ -64,7 +64,7 @@ namespace GameModel.Tests
         }
 
         [Fact]
-        public void Defend_WithDefenceZero_HitPointsShouldNotGoBelowZero()
+        public void Defend_IsKilledFromAttack_HitPointsShouldNotGoBelowZero()
         {
 
         }
