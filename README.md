@@ -33,6 +33,19 @@ idea: provide som sort of Combat class that simulates combats between two Heroes
 [reference](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices#lets-speak-the-same-language)
 
 
-## Test Driven Development
+## Test Driven Development (old)
 
 Implement the system (in some folder) by un-commenting the tests one by one. The code you write to make a test succeed should only be the bare minimum required in order to make it (and the previous tests) succeed.
+
+## Test Driven Development
+
+Implement a XXX game using TDD. The game should be playable in the console.
+
+Remember, all implementation logic should be driven by tests, using the below workflow:
+
+1. Write a test
+2. Run all tests and see the new one fail
+3. Write the simplest code to pass the test
+4. Run tests and see them succeed
+5. Refactor
+6. Repeat from step 1
