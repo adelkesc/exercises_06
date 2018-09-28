@@ -39,13 +39,34 @@ Implement the system (in some folder) by un-commenting the tests one by one. The
 
 ## Test Driven Development
 
-Implement a XXX game using TDD. The game should be playable in the console.
+Using TDD, write a program that generates a string of integers, starting at 1 and going up to 100 (separated by commas). Substitute any integer which is divisible by 3 with "Fizz", and any integer which is divisible by 5 with "Buzz", and any integer divisible by 3 and 5 with "FizzBuzz".
+
+    1
+    2
+    Fizz
+    4
+    Buzz
+    Fizz
+    7
+    8
+    Fizz
+    Buzz
+    11
+    Fizz
+    13
+    14
+    FizzBuzz
+    16
+    17
+    Fizz
+    19
+    Buzz
 
 Remember, all implementation logic should be driven by tests, using the below workflow:
 
 1. Write a test
 2. Run all tests and see the new one fail
 3. Write the simplest code to pass the test
-4. Run tests and see them succeed
+4. Run all tests and see them succeed
 5. Refactor
 6. Repeat from step 1
