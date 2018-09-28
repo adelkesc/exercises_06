@@ -41,6 +41,8 @@ Implement the system (in some folder) by un-commenting the tests one by one. The
 
 Using TDD, write a program that generates a string of integers, starting at 1 and going up to 100 (separated by commas). Substitute any integer which is divisible by 3 with "Fizz", and any integer which is divisible by 5 with "Buzz", and any integer divisible by 3 and 5 with "FizzBuzz".
 
+For example, the first 20 values would be:
+
     1
     2
     Fizz
