@@ -21,19 +21,19 @@ Create a new solution with a `classlib` project and a `xunit` project. Extract t
 Use [Unit testing C# in .NET Core using dotnet test and xUnit](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test) as a reference for setting up the solution, and the [ASP.Net Engineering Guidelines](https://github.com/aspnet/Home/wiki/Engineering-guidelines#unit-tests-and-functional-tests) for naming guidelines.
 
 
-## Unit Test and Refactor
+## Exercise 4 - Dependency Injection
 
-idea: provide a class that contains functionality that should be extracted into an other class. First create unit tests for the class, then extract the functionality and create tests for this as well.
+The `Combat` class simulates different combats between two Heroes (provided with the starter code in the exercise_4 folder). The class uses a random number generator making it hard to test. Refactor the class so that the methods `FlipCoin()` and `RollDice()` are moved to an other class. This class should implement an interface declaring these two methods. Finally provide the class to the `Combat` class when instantiated (dependency injection). 
 
 
-## Fakes, Stubs and Mocks
+## Exercise 5 - Fakes, Stubs and Mocks
 
-idea: provide som sort of Combat class that simulates combats between two Heroes. The class uses a random number generator making it hard to test. Refactor the class so that you are able to provide a Stub for the random number generator (dependency injection), and then unit test the class.
+Test the `Combat` class from previous exercise, creating stubs for `FlipCoin()` and `RollDice()`. Improve the class where your tests expose bugs or weaknesses.
 
 [reference](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices#lets-speak-the-same-language)
 
 
-## Test Driven Development
+## Exercise 6 - Test Driven Development
 
 Using TDD, write a program that generates a string of integers, starting at 1 and going up to 100 (separated by commas). Substitute any integer which is divisible by 3 with "Fizz", and any integer which is divisible by 5 with "Buzz", and any integer divisible by 3 and 5 with "FizzBuzz".
 
