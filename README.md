@@ -33,10 +33,6 @@ idea: provide som sort of Combat class that simulates combats between two Heroes
 [reference](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices#lets-speak-the-same-language)
 
 
-## Test Driven Development (old)
-
-Implement the system (in some folder) by un-commenting the tests one by one. The code you write to make a test succeed should only be the bare minimum required in order to make it (and the previous tests) succeed.
-
 ## Test Driven Development
 
 Using TDD, write a program that generates a string of integers, starting at 1 and going up to 100 (separated by commas). Substitute any integer which is divisible by 3 with "Fizz", and any integer which is divisible by 5 with "Buzz", and any integer divisible by 3 and 5 with "FizzBuzz".
