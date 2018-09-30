@@ -6,7 +6,6 @@ namespace GameModel
     {
         /*
          * Two Heroes battle until a winner is found.
-         * returning the winner.
          */
         public void Battle(Hero hero1, Hero hero2)
         {
@@ -34,15 +33,10 @@ namespace GameModel
 
         /* 
          * The attacking hero get to attack first, and will
-         * get an extra attack if a 20'er is rolled.
+         * get an extra attack if 20 is rolled.
          */
         public void Ambush(Hero attacking, Hero defending)
         {
-            defending.Defend(attacking);
-            if(!defending.IsAlive())
-            {
-                return;
-            }
 
             if (RollDice(20) == 20)
             {
@@ -68,11 +62,6 @@ namespace GameModel
             }
         }
 
-        private bool IsSurvivingAttack(Hero attacker, Hero defender)
-        {
-            defender.Defend(attacker);
-            return defender.IsAlive();
-        }
         private bool FlipCoin()
         {
             var rnd = new Random();
