@@ -21,6 +21,11 @@ namespace GameModel
             {
                 return Strength / 2;
             }
+            // if hitpoints are zero, then attack should be 0
+            if (HitPoints == 0)
+            {
+                return Strength = 0;
+            }
             return (MainHandWeapon.Attack * Strength) / 2;
         }
         
